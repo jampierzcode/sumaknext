@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Andes Neue";
+  src: url("/fonts/Demo_Fonts/Fontspring-DEMO-andesneue-bold.otf")
+    format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "GillSans";
+  src: url("/fonts/GillSans/Gill Sans Light.otf") format("opentype");
+  font-weight: light;
+}
+@font-face {
+  font-family: "Andes Neue";
+  src: url("/fonts/Demo_Fonts/Fontspring-DEMO-andesneuealt1-light.otf")
+    format("opentype");
+  font-weight: regular;
+}
+@font-face {
+  font-family: "Andes Neue";
+  src: url("/fonts/Demo_Fonts/Fontspring-DEMO-andesneuealt1-bold.otf")
+    format("opentype");
+  font-weight: bold;
+}
+/* impor font nunito sans */
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("/fonts/Nunito_Sans/static/NunitoSans_7pt-Regular.ttf")
+    format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("/fonts/Nunito_Sans/static/NunitoSans_7pt-SemiBold.ttf")
+    format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("/fonts/Nunito_Sans/static/NunitoSans_7pt-Bold.ttf")
+    format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("/fonts/Nunito_Sans/static/NunitoSans_7pt-Black.ttf")
+    format("opentype");
+  font-weight: 900;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins";
+  color: rgb(var(--foreground-rgb));
+  background: #fff;
+}
+h1 {
+  font-family: "Nunito Sans" !important;
+  font-weight: 400;
+}
+a {
+  font-family: "Nunito Sans" !important;
+  font-weight: 700;
+  /* text-transform: uppercase; */
+}
+.swiper-portada .swiper-wrapper {
+  padding: 40px 0px !important;
+}
+.swiper-portada .swiper-pagination-bullet-active {
+  background-color: #fcc016 !important;
+}
+.swiper-master .swiper-wrapper {
+  padding-bottom: 40px !important;
+}
+.swiper-master .swiper-pagination-bullet-active {
+  background-color: #fcc016 !important;
+}
